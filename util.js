@@ -2,8 +2,17 @@ var honorbounder = honorbounder || {};
 
 honorbounder.util = {
 
-    getHeroEvolution: function(hero, stars)
-    {
+    getAbilitiesNames: function(codes) {
+        var names = [];
+
+        $.each(codes, function(idx, code) {
+            names.push(honorbounder.util.getSingleDataByCode('abilities', code, 'name'));
+        } );
+        
+        return names;
+    },
+
+    getHeroEvolution: function(hero, stars) {
         var heroEvolution;
 
         $.each(hero.evolutions, function(idx, evolution) {
@@ -16,8 +25,7 @@ honorbounder.util = {
         return heroEvolution;
     },
 
-    getHeroStat: function(hero, stars, level)
-    {
+    getHeroStat: function(hero, stars, level) {
         var getHeroStat;
         var heroEvolution = honorbounder.util.getHeroEvolution(hero, stars);
 
@@ -32,8 +40,7 @@ honorbounder.util = {
         return getHeroStat;
     },
 
-    getDataByCode: function(type, code)
-    {
+    getDataByCode: function(type, code) {
         var found = null;
 
         $.each(honorbounder.data[type], function(idx, d) {
@@ -44,5 +51,9 @@ honorbounder.util = {
         } );
 
         return found;
+    },
+    
+    getSingleDataByCode: function(type, code, property) {
+        return honorbounder.util.getDataByCode(type, code)[property];
     }
 };

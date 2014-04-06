@@ -3,19 +3,39 @@ var honorbounder = honorbounder || {};
 honorbounder.data = {
     elements: [ {
         name: "Abyss",
-        code: 'abyss'
+        code: 'abyss',
+        images: {
+            big: 'http://img3.wikia.nocookie.net/__cb20140205222421/honorbound-juicebox/images/f/fe/Abyss_icon.png',
+            medium: 'http://img3.wikia.nocookie.net/__cb20140205222421/honorbound-juicebox/images/thumb/f/fe/Abyss_icon.png/55px-Abyss_icon.png'
+        }
     }, {
         name: "Lunar",
-        code: 'lunar'
+        code: 'lunar',
+        images: {
+            big: 'http://img1.wikia.nocookie.net/__cb20140205222442/honorbound-juicebox/images/0/0b/Lunar_icon.png',
+            medium: 'http://img1.wikia.nocookie.net/__cb20140205222442/honorbound-juicebox/images/thumb/0/0b/Lunar_icon.png/55px-Lunar_icon.png'
+        }
     }, {
         name: "Primal",
-        code: 'primal'
+        code: 'primal',
+        images: {
+            big: 'http://img4.wikia.nocookie.net/__cb20140205222503/honorbound-juicebox/images/6/6d/Primal_icon.png',
+            medium: 'http://img4.wikia.nocookie.net/__cb20140205222503/honorbound-juicebox/images/thumb/6/6d/Primal_icon.png/55px-Primal_icon.png'
+        }
     }, {
         name: "Spirit",
-        code: 'spirit'
+        code: 'spirit',
+        images: {
+            big: 'http://img2.wikia.nocookie.net/__cb20140205222525/honorbound-juicebox/images/6/66/Spirit_icon.png',
+            medium: 'http://img2.wikia.nocookie.net/__cb20140205222525/honorbound-juicebox/images/thumb/6/66/Spirit_icon.png/55px-Terra_icon.png'
+        }
     }, {
         name: "Terra",
-        code: 'terra'
+        code: 'terra',
+        images: {
+            big:    'http://img2.wikia.nocookie.net/__cb20140205222551/honorbound-juicebox/images/c/c2/Terra_icon.png',
+            medium: 'http://img3.wikia.nocookie.net/__cb20140205222551/honorbound-juicebox/images/thumb/c/c2/Terra_icon.png/55px-Terra_icon.png'
+        }
     } ],
 
     tiers: [ {
@@ -37,22 +57,46 @@ honorbounder.data = {
 
     classes: [ {
         name: "Archer",
-        code: 'archer'
+        code: 'archer',
+        images: {
+            big:    'http://img2.wikia.nocookie.net/__cb20140223221502/honorbound-juicebox/images/b/b9/Class_archer.png',
+            medium: 'http://img2.wikia.nocookie.net/__cb20140223221502/honorbound-juicebox/images/thumb/b/b9/Class_archer.png/55px-Class_archer.png'
+        }
     }, {
         name: "Cleric",
-        code: 'cleric'
+        code: 'cleric',
+        images: {
+            big:    'http://img1.wikia.nocookie.net/__cb20140223123239/honorbound-juicebox/images/d/d7/Class_cleric.png',
+            medium: 'http://img1.wikia.nocookie.net/__cb20140223123239/honorbound-juicebox/images/thumb/d/d7/Class_cleric.png/55px-Class_cleric.png'
+        }
     }, {
         name: "Knight",
-        code: 'knight'
+        code: 'knight',
+        images: {
+            big:    'http://img4.wikia.nocookie.net/__cb20140223123239/honorbound-juicebox/images/d/d0/Class_knight.png',
+            medium: 'http://img4.wikia.nocookie.net/__cb20140223123239/honorbound-juicebox/images/thumb/d/d0/Class_knight.png/55px-Class_knight.png'
+        }
     }, {
         name: "Rogue",
-        code: 'rogue'
+        code: 'rogue',
+        images: {
+            big:    'http://img4.wikia.nocookie.net/__cb20140223123240/honorbound-juicebox/images/d/d7/Class_rogue.png',
+            medium: 'http://img4.wikia.nocookie.net/__cb20140223123240/honorbound-juicebox/images/thumb/d/d7/Class_rogue.png/55px-Class_rogue.png'
+        }
     }, {
         name: "Warrior",
-        code: 'warrior'
+        code: 'warrior',
+        images: {
+            big:    'http://img1.wikia.nocookie.net/__cb20140223123240/honorbound-juicebox/images/5/51/Class_warrior.png',
+            medium: 'http://img1.wikia.nocookie.net/__cb20140223123240/honorbound-juicebox/images/thumb/5/51/Class_warrior.png/55px-Class_warrior.png'
+        }
     }, {
         name: "Wizard",
-        code: 'wizard'
+        code: 'wizard',
+        images: {
+            big:    'http://img2.wikia.nocookie.net/__cb20140223123241/honorbound-juicebox/images/d/dc/Class_wizard.png',
+            medium: 'http://img2.wikia.nocookie.net/__cb20140223123241/honorbound-juicebox/images/thumb/d/dc/Class_wizard.png/55px-Class_wizard.png'
+        }
     } ],
 
     abilities: [ {
@@ -111,6 +155,11 @@ honorbounder.data = {
         description: "Attack a chain of enemies.",
         mana: 4
     }, {
+        name: "Conviction",
+        code: 'conviction',
+        description: "Attack a single enemy and weaken their physical defenses.",
+        mana: -1 // unknown
+    }, {
         name: "Conflagration",
         code: 'conflagration',
         description: "Attack all enemies and make them lose health over time.",
@@ -167,12 +216,12 @@ honorbounder.data = {
         mana: 10
     }, {
         name: "Furious Cry",
-        code: 'curious-cry',
+        code: 'furious-cry',
         description: "Boost the party's physical attack power.",
         mana: 0 // passive
     }, {
         name: "Furious Roar",
-        code: 'curious-roar',
+        code: 'furious-roar',
         description: "Boost the party's physcial attack power by a large amount. (10%-30%) Rank 1-3.",
         mana: 0 // passive
     }, {
@@ -321,6 +370,11 @@ honorbounder.data = {
         description: "Make all party members regenerate health over time.",
         mana: 0 // passive
     }, {
+        name: "Primal Invocation",
+        code: 'primal-invocation',
+        description: "Boost the damage for all the party members of the Primal affinity.",
+        mana: 0 // passive
+    }, {
         name: "Punish",
         code: 'punish',
         description: "Strike a single enemy for extra damage.",
@@ -366,6 +420,11 @@ honorbounder.data = {
         description: "Stun an enemy for one round.",
         mana: 8
     }, {
+        name: "Slice",
+        code: 'slice',
+        description: "Cause a single enemy to take damage over time.",
+        mana: -1 // unknown
+    }, {
         name: "Slow",
         code: 'slow',
         description: "Diminish the initiative of an opposing squad.",
@@ -397,7 +456,7 @@ honorbounder.data = {
         mana: -1 // unknown
     }, {
         name: "Stalwart Guard",
-        code: 'stalwar-guard',
+        code: 'stalwart-guard',
         description: "Grant allies a major buff to their physical defense attribute.",
         mana: 0 // passive
     }, {
@@ -1395,7 +1454,7 @@ honorbounder.data = {
         element: 'abyss',
         tier: 'legendary',
         class: 'knight',
-        abilities: ['defend', 'abyss-ward', 'syphon-life'],
+        abilities: ['defend', 'abyss-ward', 'siphon-life'],
         evolutions: [ {
             name: "High King Guard",
             stars: 1,
