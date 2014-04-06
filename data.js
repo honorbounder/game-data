@@ -2192,6 +2192,7 @@ honorbounder.data = {
                 {level: 45,       strength:    3363, magic:    1713, defense:    2799, resistance:    1548, health:    2684, luck:    3323},
                 {level: 50,       strength:    3961, magic:    1940, defense:    3207, resistance:    1749, health:    3071, luck:    3814},
                 {level: 55,       strength:    4385, magic:    2176, defense:    3651, resistance:    1957, health:    3473, luck:    4328},
+                {level: 60,       strength:    4935, magic:    2425, defense:    4078, resistance:    2177, health:    3898, luck:    4870},
             ]
         } ],
 
