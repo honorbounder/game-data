@@ -138,7 +138,7 @@ honorbounder.data = {
         name: "Barbed Arrows",
         code: 'barbed-arrows',
         description: "Cause a single enemy to take damage over time.",
-        mana: -1 // unknown
+        mana: 5
     }, {
         name: "Bash",
         code: 'bash',
@@ -365,10 +365,10 @@ honorbounder.data = {
         description: "Cause a single enemy to take damage over time.",
         mana: -1 // unknown
     }, {
-        name: "Primal Fusion",
-        code: 'primal-fusion',
+        name: "Primal Infusion",
+        code: 'primal-infusion',
         description: "Make all party members regenerate health over time.",
-        mana: 0 // passive
+        mana: 10
     }, {
         name: "Primal Invocation",
         code: 'primal-invocation',
@@ -943,7 +943,7 @@ honorbounder.data = {
         element: 'primal',
         tier: 'rare',
         class: 'cleric',
-        abilities: ['minor-heal', 'smite', 'primal-fusion'],
+        abilities: ['minor-heal', 'smite', 'primal-infusion'],
         evolutions: [ {
             name: "Duskweald Hierophant",
             stars: 1,
@@ -1396,7 +1396,7 @@ honorbounder.data = {
         element: 'primal',
         tier: 'rare',
         class: 'cleric',
-        abilities: ['minor-heal', 'smite', 'primal-fusion'],
+        abilities: ['minor-heal', 'smite', 'primal-infusion'],
         evolutions: [ {
             name: "Haven Medicus",
             stars: 1,
@@ -2529,6 +2529,18 @@ honorbounder.data = {
             stats: [
                 {level:  1,       strength:     223, magic:     202, defense:     176, resistance:     183, health:     161, luck:     191},
             ]
+        }, {
+            name: "Tempest Marksman++",
+            stars: 3,
+            stats: [
+                {level:  1,       strength:     297, magic:     274, defense:     246, resistance:     253, health:     230, luck:     262},
+            ]
+        }, {
+            name: "Tempest Marksman+++",
+            stars: 4,
+            stats: [
+                {level:  1,       strength:     337, magic:     313, defense:     283, resistance:     291, health:     267, luck:     300},
+            ]
         } ],
 
     },  {
@@ -2541,16 +2553,39 @@ honorbounder.data = {
         class: 'warrior',
         abilities: ['cleave', 'rend-armor', 'furious-roar'],
         evolutions: [ {
-            name: "Tempest Captain+",
+            name: "Tempest Captain",
             stars: 1,
             stats: [
                 {level:  1,       strength:     297, magic:     242, defense:     257, resistance:     253, health:     249, luck:     286},
             ]
         }, {
-            name: "Tempest Captain++",
+            name: "Tempest Captain+",
             stars: 1,
             stats: [
                 {level:  1,       strength:     337, magic:     279, defense:     295, resistance:     270, health:     286, luck:     325},
+            ]
+        } ],
+
+    },  {
+
+        name: "Tempest Firstmate",
+        code: 'tempest-firstmate',
+        wiki: 'Tempest_Firstmate',
+        element: 'spirit',
+        tier: 'rare',
+        class: 'warrior',
+        abilities: ['cleave', 'rend-armor', 'furious-cry'],
+        evolutions: [ {
+            name: "Tempest Firstmate",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     223, magic:     173, defense:     187, resistance:     165, health:     179, luck:     213},
+            ]
+        }, {
+            name: "Tempest Firstmate+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     259, magic:     207, defense:     221, resistance:     198, health:     213, luck:     249},
             ]
         } ],
 
@@ -2725,6 +2760,12 @@ honorbounder.data = {
             stars: 3,
             stats: [
                 {level:  1,       strength:     242, magic:     311, defense:     250, resistance:     261, health:     233, luck:     263},
+            ]
+        }, {
+            name: "Winter Wolf++",
+            stars: 4,
+            stats: [
+                {level:  1,       strength:     279, magic:     352, defense:     288, resistance:     299, health:     270, luck:     301},
             ]
         } ],
     } ],
