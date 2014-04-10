@@ -1948,6 +1948,40 @@ honorbounder.data = {
 
     },  {
 
+        name: "Rampaging Bear",
+        code: 'rampaging-bear',
+        wiki: 'Rampaging_Bear',
+        element: 'primal',
+        tier: 'epic',
+        class: 'knight',
+        abilities: ['defend', 'warding-stance', 'bash'],
+        evolutions: [ {
+            name: "Rampaging Bear",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     331, magic:     279, defense:     298, resistance:     272, health:     345, luck:     263},
+            ]
+        } ]
+
+    },  {
+
+        name: "Rampaging Wretch",
+        code: 'rampaging-wretch',
+        wiki: 'Rampaging_Wretch',
+        element: 'abyss',
+        tier: 'epic',
+        class: 'knight',
+        abilities: ['defend', 'warding-stance', 'bash'],
+        evolutions: [ {
+            name: "Rampaging Wretch",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     331, magic:     279, defense:     298, resistance:     272, health:     345, luck:     263},
+            ]
+        } ]
+
+    },  {
+
         name: "Ranger of the Deepwood",
         code: 'ranger-of-the-deepwood',
         wiki: 'Ranger_of_the_Deepwood',
