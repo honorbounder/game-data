@@ -12,7 +12,7 @@ honorbounder.data = {
         name: "Lunar",
         code: 'lunar',
         images: {
-            big: 'http://img1.wikia.nocookie.net/__cb20140205222442/honorbound-juicebox/images/0/0b/Lunar_icon.png',
+            big: 'http://img1.wikia.nocookie.net/__cb20mar140205222442/honorbound-juicebox/images/0/0b/Lunar_icon.png',
             medium: 'http://img1.wikia.nocookie.net/__cb20140205222442/honorbound-juicebox/images/thumb/0/0b/Lunar_icon.png/55px-Lunar_icon.png'
         }
     }, {
