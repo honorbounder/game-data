@@ -295,6 +295,11 @@ honorbounder.data = {
         description: "Attack a single enemy for massive damage.",
         mana: 8
     }, {
+        name: "Life Steal",
+        code: 'life-steal',
+        description: "Attacks a single enemy and drains the health returning it to your party.",
+        mana: 4 // unknown
+    }, {
         name: "Lightning Strike",
         code: 'lightning-strike',
         description: "Attack a chain of enemies with a magical lightning bolt.",
@@ -513,7 +518,7 @@ honorbounder.data = {
 
     heroes: [ {
         name: "A'san, The Tempest",
-        code: 'A-san-the-tempest',
+        code: 'a-san-the-tempest',
         wiki: 'A%27san,_The_Tempest',
         element: 'spirit',
         tier: 'legendary',
@@ -2011,7 +2016,7 @@ honorbounder.data = {
         element: 'spirit',
         tier: 'legendary',
         class: 'rogue',
-        abilities: ['haste', 'flashing-blades'],
+        abilities: ['life-steal', 'haste', 'flashing-blades'],
         evolutions: [ {
             name: "Revenant of Liashi",
             stars: 1,
