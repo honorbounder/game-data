@@ -1971,6 +1971,23 @@ honorbounder.data = {
 
     },  {
 
+        name: "Revenant of Liashi",
+        code: 'revenant-of-liashi',
+        wiki: 'Revenant_of_Liashi',
+        element: 'spirit',
+        tier: 'legendary',
+        class: 'rogue',
+        abilities: ['haste', 'flashing-blades'],
+        evolutions: [ {
+            name: "Revenant of Liashi",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     732, magic:     732, defense:     712, resistance:     732, health:     738, luck:     753},
+            ]
+        } ]
+
+    },  {
+
         name: "Rimeholm Abomination",
         code: 'rimeholm-abomination',
         wiki: 'Rimeholm_Abomination',
