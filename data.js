@@ -1222,6 +1222,11 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     418, magic:     375, defense:     436, resistance:     395, health:     430, luck:     397},
+                {level:  5,       strength:     496, magic:     415, defense:     536, resistance:     453, health:     525, luck:     450},
+                {level: 10,       strength:     646, magic:     493, defense:     729, resistance:     564, health:     698, luck:     553},
+                {level: 15,       strength:     832, magic:     589, defense:     967, resistance:     702, health:     916, luck:     680},
+                {level: 20,       strength:    1053, magic:     704, defense:    1251, resistance:     867, health:    1176, luck:     831},
+                {level: 25,       strength:    1310, magic:     838, defense:    1581, resistance:    1058, health:    1478, luck:    1007},
                 {level: 30,       strength:    1589, magic:     982, defense:    1938, resistance:    1265, health:    1805, luck:    1197},
                 {level: 35,       strength:    1896, magic:    1141, defense:    2332, resistance:    1493, health:    2166, luck:    1407},
                 {level: 40,       strength:    2224, magic:    1312, defense:    2754, resistance:    1737, health:    2552, luck:    1632},
@@ -1759,6 +1764,11 @@ honorbounder.data = {
             stars: 3,
             stats: [
                 {level:  1,       strength:     386, magic:     386, defense:     359, resistance:     400, health:     396, luck:     395},
+                {level: 10,       strength:     513, magic:     634, defense:     501, resistance:     678, health:     513, luck:     635},
+                {level: 15,       strength:     634, magic:     836, defense:     617, resistance:     904, health:     634, luck:     830},
+                {level: 20,       strength:     780, magic:    1076, defense:     755, resistance:    1174, health:     780, luck:    1063},
+                {level: 25,       strength:     949, magic:    1356, defense:     915, resistance:    1487, health:     949, luck:    1334},
+                {level: 30,       strength:    1131, magic:    1658, defense:    1089, resistance:    1826, health:    1131, luck:    1627},
             ]
         }, {
             name: "Marsh Goblin Witch+++",
