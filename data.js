@@ -125,6 +125,11 @@ honorbounder.data = {
         description: "Attack all enemies with a fiery maelstrom.",
         mana: 5
     }, {
+        name: "Arrow of Dawn",
+        code: 'arrow-of-dawn',
+        description: "Attack a group of enemies.",
+        mana: -1 // unknown
+    }, {
         name: "Arrow of Thunder",
         code: 'arrow-of-thunder',
         description: "Attack a single enemy and weaken their magical attack power.",
@@ -149,6 +154,11 @@ honorbounder.data = {
         code: 'blinding-powder',
         description: "Stun a chain of enemies.",
         mana: 12
+    }, {
+        name: "Channel Mana",
+        code: 'channel-mana',
+        description: "Generate mana in battle.",
+        mana: 0 // passive
     }, {
         name: "Cleave",
         code: 'cleave',
@@ -503,6 +513,11 @@ honorbounder.data = {
         name: "Terra Ward",
         code: 'terra-ward',
         description: "Protect all party members from those of Terra affinity.",
+        mana: 0 // passive
+    }, {
+        name: "Thorn Coat",
+        code: 'thorn-coat',
+        description: "Target reflects a small amount of physical damage.",
         mana: 0 // passive
     }, {
         name: "Varra's Arrow",
@@ -1704,6 +1719,46 @@ honorbounder.data = {
 
     },  {
 
+        name: "Liashi Arbalest",
+        code: 'liashi-arbalest',
+        wiki: 'Liashi_Arbalest',
+        element: 'spirit',
+        tier: 'epic',
+        class: 'archer',
+        abilities: ['aim-shot', 'arrow-of-dawn', 'stalker-s-mark'],
+        evolutions: [ {
+            name: "Liashi Arbalest",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     322, magic:     306, defense:     263, resistance:     326, health:     299, luck:     268},
+            ]
+		}, {
+            name: "Liashi Arbalest+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     395, magic:     376, defense:     327, resistance:     399, health:     368, luck:     332},
+            ]
+        } ]
+
+    },  {
+
+        name: "Liashi Chieftain",
+        code: 'liashi-chieftain',
+        wiki: 'Liashi_Chieftain',
+        element: 'terra',
+        tier: 'epic',
+        class: 'rogue',
+        abilities: ['steal', 'thorn-coat'],
+        evolutions: [ {
+            name: "Liashi Chieftain",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     312, magic:     275, defense:     281, resistance:     299, health:     313, luck:     292},
+            ]
+        } ]
+
+    },  {
+
         name: "Liashi Golem",
         code: 'liashi-golem',
         wiki: 'Liashi_Golem',
@@ -1721,30 +1776,150 @@ honorbounder.data = {
 
     },  {
 
+        name: "Liashi Lookout",
+        code: 'liashi-lookout',
+        wiki: 'Liashi_Lookout',
+        element: 'terra',
+        tier: 'rare',
+        class: 'rogue',
+        abilities: ['steal', 'gambler-s-trick', 'blinding-powder'],
+        evolutions: [ {
+            name: "Liashi Lookout",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     312, magic:     275, defense:     281, resistance:     299, health:     313, luck:     292},
+            ]
+        } ]
+
+    },  {
+
         name: "Liashi Ogre Guardian",
         code: 'liashi-ogre-guardian',
-        wiki: 'Liashi_Orgre_Guardin',
+        wiki: 'Liashi_Ogre_Guardin',
         element: 'terra',
         tier: 'rare',
         class: 'knight',
         abilities: ['defend', 'lance', 'warding-stance'],
         evolutions: [ {
-            name: "Liashi Ancient One+",
+            name: "Liashi Ogre Guardian",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     188, magic:     169, defense:     218, resistance:     187, health:     197, luck:     169},
+            ]
+        }, {
+            name: "Liashi Ogre Guardian+",
             stars: 2,
             stats: [
                 {level:  1,       strength:     222, magic:     202, defense:     254, resistance:     221, health:     242, luck:     202},
             ]
         }, {
-            name: "Liashi Ancient One++",
+            name: "Liashi Ogre Guardian++",
             stars: 3,
             stats: [
                 {level:  1,       strength:     258, magic:     237, defense:     292, resistance:     257, health:     279, luck:     237},
             ]
         }, {
-            name: "Liashi Ancient One+++",
+            name: "Liashi Ogre Guardian+++",
             stars: 4,
             stats: [
                 {level:  1,       strength:     296, magic:     274, defense:     332, resistance:     295, health:     318, luck:     274},
+            ]
+        } ]
+
+    },  {
+
+        name: "Liashi Ogre Invoker",
+        code: 'liashi-ogre-invoker',
+        wiki: 'Liashi_Ogre_Invoker',
+        element: 'terra',
+        tier: 'epic',
+        class: 'wizard',
+        abilities: ['arcane-blast', 'thorn-coat'],
+        evolutions: [ {
+            name: "Liashi Ogre Invoker",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     275, magic:     316, defense:     283, resistance:     329, health:     283, luck:     296},
+            ]
+        }, {
+            name: "Liashi Ogre Invoker+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     341, magic:     388, defense:     350, resistance:     402, health:     350, luck:     365},
+            ]
+        } ]
+
+    },  {
+
+        name: "Liashi Ogre Scavenger",
+        code: 'liashi-ogre-scavenger',
+        wiki: 'Liashi_Ogre_Scavenger',
+        element: 'terra',
+        tier: 'rare',
+        class: 'warrior',
+        abilities: ['cleave', 'thorn-coat', 'primal-bow'],
+        evolutions: [ {
+            name: "Liashi Ogre Scavenger",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     207, magic:     169, defense:     187, resistance:     176, health:     197, luck:     197},
+            ]
+        }, {
+            name: "Liashi Ogre Scavenger++",
+            stars: 3,
+            stats: [
+                {level:  1,       strength:     302, magic:     256, defense:     278, resistance:     266, health:     291, luck:     291},
+            ]
+        } ]
+
+    },  {
+
+        name: "Liashi Siege Golem",
+        code: 'liashi-siege-golem',
+        wiki: 'Liashi_Siege_Golem',
+        element: 'spirit',
+        tier: 'epic',
+        class: 'warrior',
+        abilities: ['cleave', 'demoralizing-cry'],
+        evolutions: [ {
+            name: "Liashi Siege Golem",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     322, magic:     275, defense:     272, resistance:     299, health:     326, luck:     284},
+            ]
+        } ]
+
+    },  {
+
+        name: "Liashi Phantom",
+        code: 'liashi-phantom',
+        wiki: 'Liashi_Phantom',
+        element: 'spirit',
+        tier: 'epic',
+        class: 'cleric',
+        abilities: ['minor-heal', 'channel-mana'],
+        evolutions: [ {
+            name: "Liashi Phantom",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     267, magic:     334, defense:     281, resistance:     347, health:     287, luck:     281},
+            ]
+        } ]
+
+    },  {
+
+        name: "Liashi Wraith",
+        code: 'liashi-wraith',
+        wiki: 'Liashi_Wraith',
+        element: 'spirit',
+        tier: 'epic',
+        class: 'wizard',
+        abilities: ['arcane-blast'],
+        evolutions: [ {
+            name: "Liashi Wraith",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     267, magic:     347, defense:     263, resistance:     347, health:     387, luck:     281},
             ]
         } ]
 
