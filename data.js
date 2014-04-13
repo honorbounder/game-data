@@ -1458,8 +1458,8 @@ honorbounder.data = {
 
     },  {
 
-        name: "High King Guard",
-        code: 'high-king-guard',
+        name: "High King Gard",
+        code: 'high-king-gard',
         wiki: 'High_King_Gard',
         element: 'abyss',
         tier: 'legendary',
@@ -1965,6 +1965,91 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     331, magic:     279, defense:     298, resistance:     272, health:     345, luck:     263},
+            ]
+        } ]
+
+    },  {
+
+        name: "Rampaging Bloodletter",
+        code: 'rampaging-bloodletter',
+        wiki: 'Rampaging_Bloodletter',
+        element: 'abyss',
+        tier: 'epic',
+        class: 'rogue',
+        abilities: ['steal', 'minor-poison', 'necrotic-cut'],
+        evolutions: [ {
+            name: "Rampaging Bloodletter",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     345, magic:     279, defense:     281, resistance:     263, health:     317, luck:     298},
+            ]
+        } ]
+
+    },  {
+
+        name: "Rampaging Drake",
+        code: 'rampaging-drake',
+        wiki: 'Rampaging_Drake',
+        element: 'terra',
+        tier: 'epic',
+        class: 'rogue',
+        abilities: ['steal', 'garrote', 'flurry'],
+        evolutions: [ {
+            name: "Rampaging Drake",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     345, magic:     279, defense:     281, resistance:     263, health:     317, luck:     298},
+            ]
+        } ]
+
+    },  {
+
+        name: "Rampaging Shadow",
+        code: 'rampaging-shadow',
+        wiki: 'Rampaging_Shadow',
+        element: 'abyss',
+        tier: 'epic',
+        class: 'rogue',
+        abilities: ['steal', 'garrote', 'flurry'],
+        evolutions: [ {
+            name: "Rampaging Shadow",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     345, magic:     279, defense:     281, resistance:     263, health:     317, luck:     298},
+            ]
+        } ]
+
+    },  {
+
+        name: "Rampaging Troll",
+        code: 'rampaging-troll',
+        wiki: 'Rampaging_Troll',
+        element: 'abyss',
+        tier: 'epic',
+        class: 'warrior',
+        abilities: ['steal', 'garrote', 'flurry'],
+        evolutions: [ {
+            name: "Rampaging Troll",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     359, magic:     279, defense:     272, resistance:     263, health:     331, luck:     298},
+            ]
+        } ]
+
+    },  {
+
+        name: "Rampaging Wolf",
+        code: 'rampaging-wolf',
+        wiki: 'Rampaging_Wolf',
+        element: 'primal',
+        tier: 'epic',
+        class: 'warrior',
+        abilities: [],
+        evolutions: [ {
+            name: "Rampaging Wolf",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     359, magic:     279, defense:     272, resistance:     263, health:     331, luck:     298},
             ]
         } ]
 
