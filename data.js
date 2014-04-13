@@ -500,6 +500,11 @@ honorbounder.data = {
         description: "Grant a major magical ward to all allies.",
         mana: 0 // passive
     }, {
+        name: "Terra Ward",
+        code: 'terra-ward',
+        description: "Protect all party members from those of Terra affinity.",
+        mana: 0 // passive
+    }, {
         name: "Varra's Arrow",
         code: 'varra-s-arrow',
         description: "Attack a single enemy and make them lose health over time.",
@@ -2609,36 +2614,87 @@ honorbounder.data = {
 
     },  {
 
-        name: "Sug-Yougol Deep One",
-        code: 'sug-yougol-deep-one',
-        wiki: 'Sug-Yougol_Deep_One',
+        name: "Sug-Yugol Champion",
+        code: 'sug-yugol-champion',
+        wiki: 'Sug-Yugol_Champion',
+        element: 'lunar',
+        tier: 'epic',
+        class: 'knight',
+        abilities: ['defend', 'impale', 'terra-ward'],
+        evolutions: [ {
+            name: "Sug-Yugol Champion+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     301, magic:     283, defense:     332, resistance:     295, health:     313, luck:     267},
+            ]
+        } ],
+
+    },  {
+
+        name: "Sug-Yugol Deep One",
+        code: 'sug-yugol-deep-one',
+        wiki: 'Sug-Yugol_Deep_One',
         element: 'lunar',
         tier: 'epic',
         class: 'wizard',
         abilities: ['arcane-blast', 'ice-storm', 'symbol-of-focus'],
         evolutions: [ {
-            name: "Sug-Yougol Deep One",
+            name: "Sug-Yugol Deep One",
             stars: 1,
             stats: [
                 {level:  1,       strength:     279, magic:     329, defense:     283, resistance:     329, health:     279, luck:     286},
             ]
         }, {
-            name: "Sug-Yougol Deep One+",
+            name: "Sug-Yugol Deep One+",
             stars: 2,
             stats: [
                 {level:  1,       strength:     345, magic:     402, defense:     350, resistance:     402, health:     345, luck:     363},
             ]
         }, {
-            name: "Sug-Yougol Deep One++",
+            name: "Sug-Yugol Deep One++",
             stars: 3,
             stats: [
                 {level:  1,       strength:     359, magic:     414, defense:     363, resistance:     414, health:     359, luck:     366},
             ]
         }, {
-            name: "Sug-Yougol Deep One+++",
+            name: "Sug-Yugol Deep One+++",
             stars: 4,
             stats: [
                 {level:  1,       strength:     437, magic:     500, defense:     441, resistance:     500, health:     437, luck:     444},
+            ]
+        } ],
+
+    },  {
+
+        name: "Sug-Yugol Gladiator",
+        code: 'sug-yugol-gladiator',
+        wiki: 'Sug-Yugol_Gladiator',
+        element: 'lunar',
+        tier: 'rare',
+        class: 'knight',
+        abilities: ['defend', 'impale', 'terra-ward'],
+        evolutions: [ {
+            name: "Sug-Yugol Gladiator+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     227 magic:     210, defense:     254, resistance:     221, health:     237, luck:     195},
+            ]
+        } ],
+
+    },  {
+
+        name: "Sug-Yugol High Priest",
+        code: 'sug-yugol-high-priest',
+        wiki: 'Sug-Yugol_High_Priest',
+        element: 'lunar',
+        tier: 'epic',
+        class: 'cleric',
+        abilities: ['minor-heal'],
+        evolutions: [ {
+            name: "Sug-Yugol High Priest+++",
+            stars: 4,
+            stats: [
+                {level:  1,       strength:     437, magic:     486, defense:     470, resistance:     501, health:     437, luck:     435},
             ]
         } ],
 
