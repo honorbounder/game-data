@@ -2852,7 +2852,7 @@ honorbounder.data = {
             name: "Sug-Yugol Gladiator+",
             stars: 2,
             stats: [
-                {level:  1,       strength:     227 magic:     210, defense:     254, resistance:     221, health:     237, luck:     195},
+                {level:  1,       strength:     227, magic:     210, defense:     254, resistance:     221, health:     237, luck:     195},
             ]
         } ],
 
