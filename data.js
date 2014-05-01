@@ -360,6 +360,11 @@ honorbounder.data = {
         description: "Deal damage to a single enemy and stun them.",
         mana: -1 // unknown
     }, {
+        name: "Plasma Bolt",
+        code: 'plasma-bolt',
+        description: "Attack a single enemy with a fiery bolt.",
+        mana: -1 // unknown
+    }, {
         name: "Poison Arrow",
         code: 'poison-arrow',
         description: "Cause a single enemy to take damage over time.",
@@ -652,6 +657,24 @@ honorbounder.data = {
 
     },  {
 
+        name: "Alshin Sharpshooter",
+        code: 'alshin-sharpshooter',
+        wiki: 'Alshin_Sharpshooter',
+        element: 'spirit',
+        tier: 'uncommon',
+        class: 'archer',
+        abilities: ['aim-shot', 'barbed-arrows'],
+        evolutions: [ {
+            name: "Alshin Sharpshooter+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     185, magic:     144, defense:     162, resistance:     218, health:     195, luck:     156},
+                {level:  5,       strength:     284, magic:     263, defense:     182, resistance:     219, health:     253, luck:     206},
+            ]
+        } ]
+
+    },  {
+
         name: "Alshin Scryer",
         code: 'alshin-scryer',
         wiki: 'Alshin_Scryer',
@@ -687,6 +710,7 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     213, magic:     180, defense:     188, resistance:     169, health:     174, luck:     212},
+                {level:  5,       strength:     294, magic:     225, defense:     248, resistance:     208, health:     221, luck:     296},
             ]
         }, {
             name: "Alshin Shadow+",
@@ -801,6 +825,56 @@ honorbounder.data = {
 
     },  {
 
+        name: "Bandit Champion",
+        code: 'bandit-champion',
+        wiki: 'Bandit_Champion',
+        element: 'terra',
+        tier: 'uncommon',
+        class: 'knight',
+        abilities: ['defend', 'lance'],
+        evolutions: [ {
+            name: "Bandit Champion",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     147, magic:     116, defense:     142, resistance:     125, health:     218, luck:     113},
+                {level:  5,       strength:     213, magic:     154, defense:     211, resistance:     173, health:     284, luck:     149},
+            ]
+        }, {
+            name: "Bandit Champion+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     179, magic:     147, defense:     174, resistance:     156, health:     254, luck:     144},
+            ]
+        } ]
+
+    },  {
+
+        name: "Bandit Captain",
+        code: 'bandit-captain',
+        wiki: 'Bandit_Captain',
+        element: 'terra',
+        tier: 'uncommon',
+        class: 'rogue',
+        abilities: ['steal', 'minor-poison'],
+        evolutions: [ {
+            name: "Bandit Captain",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     148, magic:     113, defense:     134, resistance:     113, health:     208, luck:     147},
+                {level:  5,       strength:     219, magic:     149, defense:     191, resistance:     148, health:     260, luck:     220},
+                {level: 10,       strength:     354, magic:     218, defense:     302, resistance:     218, health:     359, luck:     361},
+            ]
+        }, {
+            name: "Bandit Captain+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     180, magic:     144, defense:     166, resistance:     144, health:     243, luck:     179},
+                {level:  5,       strength:     254, magic:     182, defense:     226, resistance:     182, health:     297, luck:     256},
+            ]
+        } ]
+
+    },  {
+
         name: "Bandit Cleric",
         code: 'bandit-cleric',
         wiki: 'Bandit_Cleric',
@@ -854,6 +928,29 @@ honorbounder.data = {
             stars: 2,
             stats: [
                 {level:  1,       strength:     318, magic:     274, defense:     301, resistance:     274, health:     300, luck:     318},
+            ]
+        } ]
+
+    },  {
+
+        name: "Bandit Runeweaver",
+        code: 'bandit-runeweaver',
+        wiki: 'Bandit_Runeweaver',
+        element: 'terra',
+        tier: 'uncommon',
+        class: 'wizard',
+        abilities: ['arcane-blast', 'glyph-of-focus'],
+        evolutions: [ {
+            name: "Bandit Runeweaver",
+            stars: 1,
+            stats: [
+                {level:  5,       strength:     170, magic:     229, defense:     143, resistance:     229, health:     228, luck:     185},
+            ]
+        }, {
+            name: "Bandit Runeweaver+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     157, magic:     185, defense:     139, resistance:     185, health:     226, luck:     162},
             ]
         } ]
 
@@ -945,6 +1042,30 @@ honorbounder.data = {
 
     },  {
 
+        name: "Crazed Alshin",
+        code: 'crazed-alshin',
+        wiki: 'Crazed_Alshin',
+        element: 'spirit',
+        tier: 'uncommon',
+        class: 'rogue',
+        abilities: ['steal', 'minor-poison'],
+        evolutions: [ {
+            name: "Crazed Alshinn",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     152, magic:     123, defense:     130, resistance:     113, health:     193, luck:     152},
+                {level:  5,       strength:     226, magic:     165, defense:     185, resistance:     149, health:     235, luck:     229},
+            ]
+        }, {
+            name: "Crazed Alshin+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     185, magic:     154, defense:     162, resistance:     144, health:     228, luck:     185},
+            ]
+        } ]
+
+    },  {
+
         name: "Danarius the Warlock",
         code: 'danarius-the-warlock',
         wiki: 'Danarius_the_Warlock',
@@ -957,6 +1078,32 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     379, magic:     450, defense:     379, resistance:     422, health:     379, luck:     423},
+            ]
+        } ]
+
+    },  {
+
+        name: "Duskweald Brute",
+        code: 'duskweald-brute',
+        wiki: 'Duskweald_Brute',
+        element: 'primal',
+        tier: 'uncommon',
+        class: 'warrior',
+        abilities: ['cleave', 'rend-armor'],
+        evolutions: [ {
+            name: "Duskweald Brute",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     162, magic:     103, defense:     121, resistance:     115, health:     223, luck:     143},
+                {level:  5,       strength:     247, magic:     133, defense:     166, resistance:     152, health:     290, luck:     210},
+                {level: 10,       strength:     410, magic:     191, defense:     253, resistance:     224, health:     418, luck:     340},
+            ]
+        }, {
+            name: "Duskweald Brute+",
+            stars: 2,
+            stats: [
+                {level:  5,       strength:     284, magic:     165, defense:     199, resistance:     185, health:     329, luck:     246},
+                {level: 10,       strength:     455, magic:     226, defense:     291, resistance:     260, health:     463, luck:     381},
             ]
         } ]
 
@@ -1061,6 +1208,8 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     450, magic:     412, defense:     392, resistance:     390, health:     406, luck:     395},
+                {level: 15,       strength:    1036, magic:     826, defense:     661, resistance:     701, health:     716, luck:     702},
+                {level: 20,       strength:    1349, magic:    1048, defense:     805, resistance:     867, health:     882, luck:     867},
             ]
         }, {
             name: "Freydis+",
@@ -1154,12 +1303,40 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     197, magic:     169, defense:     202, resistance:     176, health:     178, luck:     223},
+                {level:  1,       strength:     267, magic:     208, defense:     271, resistance:     219, health:     227, luck:     316},
             ]
         }, {
             name: "Glacial Hunter+",
             stars: 2,
             stats: [
                 {level:  1,       strength:     232, magic:     202, defense:     237, resistance:     210, health:     122, luck:     259},
+            ]
+        } ]
+
+    },  {
+
+        name: "Godsworn Hunter",
+        code: 'godsworn-hunter',
+        wiki: 'Godsworn_Hunter',
+        element: 'lunar',
+        tier: 'uncommon',
+        class: 'archer',
+        abilities: ['aimshot', 'volley'],
+        evolutions: [ {
+            name: "Godsworn Hunter",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     159, magic:     143, defense:     124, resistance:     117, health:     108, luck:     116},
+                {level:  5,       strength:     229, magic:     226, defense:     154, resistance:     191, health:     217, luck:     173},
+                {level: 10,       strength:     377, magic:     368, defense:     227, resistance:     302, health:     281, luck:     265},
+            ]
+        }, {
+            name: "Godsworn Hunter+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     185, magic:     185, defense:     147, resistance:     166, health:     218, luck:     156},
+                {level:  5,       strength:     266, magic:     263, defense:     187, resistance:     226, health:     253, luck:     206},
+                {level: 10,       strength:     421, magic:     412, defense:     264, resistance:     342, health:     320, luck:     303},
             ]
         } ]
 
@@ -1177,6 +1354,10 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     322, magic:     287, defense:     290, resistance:     279, health:     291, luck:     312},
+                {level:  5,       strength:     413, magic:     336, defense:     346, resistance:     323, health:     351, luck:     391},
+                {level: 10,       strength:     588, magic:     429, defense:     453, resistance:     408, health:     468, luck:     543},
+                {level: 15,       strength:     804, magic:     545, defense:     586, resistance:     513, health:     612, luck:     732},
+                {level: 20,       strength:    1062, magic:     684, defense:     744, resistance:     638, health:     784, luck:     957},
             ]
         }, {
             name: "Godsworn Leader+",
@@ -1200,6 +1381,31 @@ honorbounder.data = {
 
     },  {
 
+        name: "Godsworn Mender",
+        code: 'godsworn-mender',
+        wiki: 'Godsworn_Mender',
+        element: 'lunar',
+        tier: 'uncommon',
+        class: 'cleric',
+        abilities: ['minor-heal', 'mass-regen'],
+        evolutions: [ {
+            name: "Godsworn Mender",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     116, magic:     152, defense:     134, resistance:     152, health:     184, luck:     125},
+            ]
+        }, {
+            name: "Godsworn Mender+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     147, magic:     185, defense:     166, resistance:     185, health:     218, luck:     156},
+                {level:  5,       strength:     187, magic:     263, defense:     226, resistance:     266, health:     253, luck:     206},
+                {level: 10,       strength:     264, magic:     412, defense:     341, resistance:     421, health:     320, luck:     303},
+            ]
+        } ]
+
+    },  {
+
         name: "Godsworn Shaman",
         code: 'godsworn-shaman',
         wiki: 'Godsworn_Shaman',
@@ -1212,6 +1418,10 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     279, magic:     323, defense:     301, resistance:     322, health:     271, luck:     290},
+                {level:  5,       strength:     323, magic:     410, defense:     368, resistance:     413, health:     310, luck:     346},
+                {level: 10,       strength:     408, magic:     578, defense:     498, resistance:     588, health:     386, luck:     453},
+                {level: 15,       strength:     513, magic:     786, defense:     659, resistance:     804, health:     480, luck:     586},
+                {level: 20,       strength:     638, magic:    1034, defense:     850, resistance:    1062, health:     592, luck:     744},
             ]
         }, {
             name: "Godsworn Shaman+",
@@ -1293,6 +1503,7 @@ honorbounder.data = {
             stars: 2,
             stats: [
                 {level:  1,       strength:     222, magic:     210, defense:     254, resistance:     221, health:     232, luck:     202},
+                {level:  5,       strength:     324, magic:     294, defense:     390, resistance:     317, health:     346, luck:     280},
             ]
         }, {
             name: "Green Knight+++",
@@ -1327,6 +1538,31 @@ honorbounder.data = {
 
     },  {
 
+        name: "Greenmist Ogre",
+        code: 'greenmist-ogre',
+        wiki: 'Greenmist_Ogre',
+        element: 'terra',
+        tier: 'uncommon',
+        class: 'warrior',
+        abilities: ['cleave', 'demoralizing-cry'],
+        evolutions: [ {
+            name: "Greenmist Ogre",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     162, magic:     109, defense:     133, resistance:     106, health:     222, luck:     134},
+            ]
+        }, {
+            name: "Greenmist Ogre+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     195, magic:     139, defense:     165, resistance:     136, health:     258, luck:     166},
+                {level:  5,       strength:     284, magic:     175, defense:     220, resistance:     170, health:     327, luck:     229},
+                {level: 10,       strength:     455, magic:     244, defense:     326, resistance:     235, health:     459, luck:     352},
+            ]
+        } ]
+
+    },  {
+
         name: "Greenmist Ogre Chief",
         code: 'greenmist-ogre-chief',
         wiki: 'Greenmist_Ogre_Chief',
@@ -1335,13 +1571,13 @@ honorbounder.data = {
         class: 'warrior',
         abilities: ['cleave', 'demoralizing-cry', 'head-crack'],
         evolutions: [ {
-            name: "Green Ogre Chief",
+            name: "Greenmist Ogre Chief",
             stars: 1,
             stats: [
                 {level:  1,       strength:     230, magic:     171, defense:     198, resistance:     168, health:     296, luck:     199},
             ]
         }, {
-            name: "Green Ogre High Chief",
+            name: "Greenmist Ogre High Chief",
             stars: 2,
             stats: [
                 {level:  1,       strength:     267, magic:     205, defense:     233, resistance:     201, health:     336, luck:     234},
@@ -1420,6 +1656,31 @@ honorbounder.data = {
 
     },  {
 
+        name: "Haven Medic",
+        code: 'haven-medic',
+        wiki: 'Haven_Medic',
+        element: 'primal',
+        tier: 'uncommon',
+        class: 'cleric',
+        abilities: ['minor-heal', 'smite'],
+        evolutions: [ {
+            name: "Haven Medic",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     119, magic:     138, defense:     134, resistance:     147, health:     198, luck:     121},
+                {level:  5,       strength:     159, magic:     202, defense:     191, resistance:     220, health:     239, luck:     166},
+                {level: 10,       strength:     236, magic:     325, defense:     302, resistance:     361, health:     318, luck:     253},
+            ]
+        }, {
+            name: "Haven Medic+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     150, magic:     170, defense:     166, resistance:     179, health:     233, luck:     152},
+            ]
+        } ]
+
+    },  {
+
         name: "Haven Medicus",
         code: 'haven-medicus',
         wiki: 'Haven_Medicus',
@@ -1449,7 +1710,7 @@ honorbounder.data = {
         element: 'primal',
         tier: 'rare',
         class: 'knight',
-            abilities: ['defend', 'lance', 'aegis-stance'],
+        abilities: ['defend', 'lance', 'aegis-stance'],
         evolutions: [ {
             name: "Haven Warden",
             stars: 1,
@@ -1473,6 +1734,32 @@ honorbounder.data = {
             stars: 4,
             stats: [
                 {level:  1,       strength:     307, magic:     274, defense:     324, resistance:     285, health:     325, luck:     274},
+                {level: 60,       strength:    3814, magic:    2373, defense:    4788, resistance:    2919, health:    4618, luck:    2373},
+                {level: 70,       strength:    4748, magic:    2931, defense:    5980, resistance:    3621, health:    5763, luck:    2931},
+            ]
+        } ]
+
+    },  {
+
+        name: "Hawk",
+        code: 'hawk',
+        wiki: 'Hawk',
+        element: 'primal',
+        tier: 'uncommon',
+        class: 'warrior',
+        abilities: ['cleave', 'furious-cry'],
+        evolutions: [ {
+            name: "Hawk",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     157, magic:     113, defense:     121, resistance:     116, health:     213, luck:     143},
+                {level: 10,       strength:     393, magic:     218, defense:     253, resistance:     227, health:     387, luck:     340},
+            ]
+        }, {
+            name: "Hawk+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     190, magic:     144, defense:     152, resistance:     147, health:     249, luck:     175},
             ]
         } ]
 
@@ -1851,6 +2138,30 @@ honorbounder.data = {
 
     },  {
 
+        name: "Liashi Ogre Mage",
+        code: 'liashi-ogre-mage',
+        wiki: 'Liashi_Ogre_Mage',
+        element: 'terra',
+        tier: 'uncommon',
+        class: 'wizard',
+        abilities: ['arcane-blast', 'plasma-bolt'],
+        evolutions: [ {
+            name: "Liashi Ogre Mage",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     113, magic:     147, defense:     119, resistance:     157, health:     194, luck:     130},
+            ]
+        }, {
+            name: "Liashi Ogre Mage+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     144, magic:     179, defense:     150, resistance:     190, health:     229, luck:     162},
+                {level:  5,       strength:     182, magic:     256, defense:     192, resistance:     275, health:     270, luck:     219},
+            ]
+        } ]
+
+    },  {
+
         name: "Liashi Ogre Scavenger",
         code: 'liashi-ogre-scavenger',
         wiki: 'Liashi_Ogre_Scavenger',
@@ -1925,6 +2236,31 @@ honorbounder.data = {
 
     },  {
 
+        name: "Marsh Goblin Hexer",
+        code: 'marsh-goblin-hexer',
+        wiki: 'Marsh_Goblin_Hexer',
+        element: 'primal',
+        tier: 'uncommon',
+        class: 'wizard',
+        abilities: ['arcane-blast'],
+        evolutions: [ {
+            name: "Marsh Goblin Hexer",
+            stars: 1,
+            stats: [
+                {level:  5,       strength:     159, magic:     202, defense:     154, resistance:     220, health:     233, luck:     205},
+                {level: 10,       strength:     236, magic:     328, defense:     227, resistance:     361, health:     308, luck:     327},
+            ]
+        }, {
+            name: "Marsh Goblin Hexer+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     150, magic:     169, defense:     147, resistance:     179, health:     229, luck:     174},
+                {level: 10,       strength:     273, magic:     370, defense:     264, resistance:     403, health:     349, luck:     368},
+            ]
+        } ]
+
+    },  {
+
         name: "Marsh Goblin Witch",
         code: 'marsh-goblin-witch',
         wiki: 'Marsh_Goblin_Witch',
@@ -1954,6 +2290,9 @@ honorbounder.data = {
                 {level: 20,       strength:     780, magic:    1076, defense:     755, resistance:    1174, health:     780, luck:    1063},
                 {level: 25,       strength:     949, magic:    1356, defense:     915, resistance:    1487, health:     949, luck:    1334},
                 {level: 30,       strength:    1131, magic:    1658, defense:    1089, resistance:    1826, health:    1131, luck:    1627},
+                {level: 40,       strength:    1549, magic:    2349, defense:    1486, resistance:    2601, health:    1549, luck:    2296},
+                {level: 45,       strength:    1779, magic:    2730, defense:    1704, resistance:    3027, health:    1779, luck:    2664},
+                {level: 50,       strength:    2022, magic:    3133, defense:    1936, resistance:    3479, health:    2022, luck:    3054},
             ]
         }, {
             name: "Marsh Goblin Witch+++",
@@ -2006,6 +2345,8 @@ honorbounder.data = {
             stars: 2,
             stats: [
                 {level:  1,       strength:     369, magic:     314, defense:     331, resistance:     318, health:     325, luck:     370},
+                {level:  5,       strength:     465, magic:     258, defense:     394, resistance:     364, health:     380, luck:     470},
+                {level: 10,       strength:     650, magic:     442, defense:     517, resistance:     453, health:     487, luck:     663},
             ]
         }, {
             name: "Marshland Shadow++",
@@ -2494,6 +2835,7 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     323, magic:     271, defense:     306, resistance:     263, health:     308, luck:     316},
+                {level:  1,       strength:     410, magic:     310, defense:     377, resistance:     298, health:     375, luck:     402},
             ]
         }, {
             name: "Rimeholm Scout+",
@@ -2524,6 +2866,8 @@ honorbounder.data = {
                 {level: 50,       strength:    3961, magic:    1940, defense:    3207, resistance:    1749, health:    3071, luck:    3814},
                 {level: 55,       strength:    4385, magic:    2176, defense:    3651, resistance:    1957, health:    3473, luck:    4328},
                 {level: 60,       strength:    4935, magic:    2425, defense:    4078, resistance:    2177, health:    3898, luck:    4870},
+                {level: 70,       strength:    6159, magic:    2980, defense:    5073, resistance:    2668, health:    4843, luck:    6078},
+                {level: 75,       strength:    6782, magic:    3262, defense:    5580, resistance:    2918, health:    5324, luck:    6694},
             ]
         } ],
 
@@ -2564,6 +2908,12 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     201, magic:     173, defense:     187, resistance:     180, health:     202, luck:     187},
+            ]
+        }, {
+            name: "Risen Berserker+",
+            stars: 2,
+            stats: [
+                {level:  5,       strength:     316, magic:     250, defense:     278, resistance:     262, health:     310, luck:     286},
             ]
         } ],
 
@@ -2708,6 +3058,30 @@ honorbounder.data = {
 
     },  {
 
+        name: "Runewood Hunter",
+        code: 'runewood-hunter',
+        wiki: 'Runewood_Hunter',
+        element: 'primal',
+        tier: 'uncommon',
+        class: 'archer',
+        abilities: ['aim-shot', 'rain-of-arrows'],
+        evolutions: [ {
+            name: "Runewood Hunter",
+            stars: 1,
+            stats: [
+                {level:  5,       strength:     256, magic:     210, defense:     143, resistance:     191, health:     228, luck:     166},
+            ]
+        }, {
+            name: "Runewood Hunter+",
+            stars: 2,
+            stats: [
+                {level:  5,       strength:     293, magic:     246, defense:     175, resistance:     226, health:     265, luck:     199},
+                {level: 10,       strength:     472, magic:     381, defense:     244, resistance:     342, health:     340, luck:     291},
+            ]
+        } ],
+
+    },  {
+
         name: "Runewood Ranger",
         code: 'runewood-ranger',
         wiki: 'Runewood_Ranger',
@@ -2731,6 +3105,31 @@ honorbounder.data = {
 
     },  {
 
+        name: "Runewood Guide",
+        code: 'runewood-guide',
+        wiki: 'Runewood_Guide',
+        element: 'primal',
+        tier: 'uncommon',
+        class: 'knight',
+        abilities: ['defend', 'warding-stance'],
+        evolutions: [ {
+            name: "Runewood Guide",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     147, magic:     116, defense:     142, resistance:     125, health:     218, luck:     113},
+            ]
+        }, {
+            name: "Runewood Guide+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     179, magic:     147, defense:     174, resistance:     156, health:     254, luck:     144},
+                {level:  5,       strength:     249, magic:     187, defense:     247, resistance:     206, health:     324, luck:     182},
+                {level: 10,       strength:     382, magic:     264, defense:     386, resistance:     303, health:     458, luck:     255},
+            ]
+        } ],
+
+    },  {
+
         name: "Runewood Screetch",
         code: 'runewood-screetch',
         wiki: 'Runewood_Screetch',
@@ -2749,6 +3148,30 @@ honorbounder.data = {
             stars: 2,
             stats: [
                 {level:  1,       strength:     295, magic:     224, defense:     225, resistance:     224, health:     235, luck:     257},
+            ]
+        } ],
+
+    },  {
+
+        name: "Runewood Wretch",
+        code: 'runewood-wretch',
+        wiki: 'Runewood_Wretch',
+        element: 'abyss',
+        tier: 'uncommon',
+        class: 'knight',
+        abilities: ['defend', 'warding-stance'],
+        evolutions: [ {
+            name: "Runewood Wretch",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     151, magic:     116, defense:     142, resistance:     125, health:     209, luck:     116},
+            ]
+        }, {
+            name: "Runewood Wretch+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     184, magic:     147, defense:     174, resistance:     156, health:     224, luck:     0},
+                {level:  5,       strength:     257, magic:     187, defense:     247, resistance:     206, health:     307, luck:   187},
             ]
         } ],
 
@@ -2801,6 +3224,25 @@ honorbounder.data = {
             stars: 2,
             stats: [
                 {level:  1,       strength:     301, magic:     283, defense:     332, resistance:     295, health:     313, luck:     267},
+            ]
+        } ],
+
+    },  {
+
+        name: "Sug-Yugol Blade",
+        code: 'sug-yugol-blade',
+        wiki: 'Sug-Yugol_Blade',
+        element: 'lunar',
+        tier: 'rare',
+        class: 'rogue',
+        abilities: ['steal', 'gambler-s-trick', 'flurry'],
+        evolutions: [ {
+            name: "Sug-Yugol Blade",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     202, magic:     176, defense:     197, resistance:     176, health:     183, luck:     195},
+                {level:  5,       strength:     276, magic:     219, defense:     263, resistance:     219, health:     235, luck:     266},
+                {level: 10,       strength:     417, magic:     303, defense:     390, resistance:     303, health:     335, luck:     404},
             ]
         } ],
 
@@ -2875,6 +3317,30 @@ honorbounder.data = {
 
     },  {
 
+        name: "Swamp Troll",
+        code: 'swamp-troll',
+        wiki: 'Swamp_Troll',
+        element: 'abyss',
+        tier: 'rare',
+        class: 'warrior',
+        abilities: ['cleave', 'punish'],
+        evolutions: [ {
+            name: "Swamp Troll",
+            stars: 1,
+            stats: [
+                {level:  5,       strength:     265, magic:     149, defense:     161, resistance:     122, health:     294, luck:     219},
+                {level: 10,       strength:     442, magic:     218, defense:     243, resistance:     173, health:     426, luck:     354},
+            ]
+        }, {
+            name: "Swamp Troll+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     172, magic:     113, defense:     118, resistance:     96, health:     226, luck:     148},
+            ]
+        } ],
+
+    },  {
+
         name: "Swamp Troll Brute",
         code: 'swamp-troll-brute',
         wiki: 'Swamp_Troll_Brute',
@@ -2887,6 +3353,8 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     241, magic:     176, defense:     181, resistance:     157, health:     300, luck:     214},
+                {level:  5,       strength:     343, magic:     216, defense:     228, resistance:     186, health:     375, luck:     292},
+                {level: 10,       strength:     539, magic:     292, defense:     319, resistance:     242, health:     520, luck:     442},
             ]
         }, {
             name: "Swamp Troll Brute+",
@@ -2922,6 +3390,31 @@ honorbounder.data = {
             stars: 4,
             stats: [
                 {level:  1,       strength:     337, magic:     313, defense:     283, resistance:     291, health:     267, luck:     300},
+            ]
+        } ],
+
+    },  {
+
+        name: "Tempest Mystic",
+        code: 'tempest-mystic',
+        wiki: 'Tempest_Mystic',
+        element: 'spirit',
+        tier: 'uncommon',
+        class: 'cleric',
+        abilities: ['minor-heal', 'major-regen'],
+        evolutions: [ {
+            name: "Tempest Mystic",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     123, magic:     143, defense:     138, resistance:     142, health:     181, luck:     133},
+                {level:  5,       strength:     165, magic:     210, defense:     198, resistance:     211, health:     212, luck:     185},
+                {level: 10,       strength:     245, magic:     340, defense:     315, resistance:     344, health:     273, luck:     287},
+            ]
+        }, {
+            name: "Tempest Mystic+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     154, magic:     175, defense:     170, resistance:     174, health:     215, luck:     165},
             ]
         } ],
 
@@ -3021,6 +3514,13 @@ honorbounder.data = {
         class: 'archer',
         abilities: ['aim-shot', 'predator-s-mark', 'arrow-of-thunder'],
         evolutions: [ {
+            name: "Tundra Goblin Shooter",
+            stars: 1,
+            stats: [
+                {level:  5,       strength:     287, magic:     303, defense:     214, resistance:     263, health:     208, luck:     221},
+                {level: 10,       strength:     441, magic:     466, defense:     294, resistance:     390, health:     283, luck:     310},
+            ]
+        }, {
             name: "Tundra Goblin Shooter+",
             stars: 2,
             stats: [
@@ -3071,6 +3571,8 @@ honorbounder.data = {
             stars: 3,
             stats: [
                 {level:  1,       strength:     292, magic:     233, defense:     257, resistance:     242, health:     258, luck:     279},
+                {level:  5,       strength:     390, magic:     274, defense:     317, resistance:     287, health:     324, luck:     364},
+                {level: 10,       strength:     577, magic:     352, defense:     433, resistance:     375, health:     450, luck:     528},
             ]
         }, {
             name: "Vampire Bat+++",
@@ -3078,6 +3580,9 @@ honorbounder.data = {
             stats: [
                 {level:  1,       strength:     361, magic:     293, defense:     320, resistance:     303, health:     321, luck:     345},
                 {level: 50,       strength:    3827, magic:    1753, defense:    2468, resistance:    1929, health:    2659, luck:    3372},
+                {level: 60,       strength:    4914, magic:    2211, defense:    3142, resistance:    2439, health:    3392, luck:    4322},
+                {level: 65,       strength:    5492, magic:    2455, defense:    3500, resistance:    2710, health:    3782, luck:    4826},
+                {level: 70,       strength:    6155, magic:    2735, defense:    3913, resistance:    3023, health:    4230, luck:    5406},
             ]
         } ],
 
@@ -3130,6 +3635,7 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     173, magic:     235, defense:     180, resistance:     190, health:     165, luck:     192},
+                {level:  5,       strength:     214, magic:     336, defense:     225, resistance:     257, health:     202, luck:     255},
             ]
         }, {
             name: "Winter Wolf+",
@@ -3142,6 +3648,8 @@ honorbounder.data = {
             stars: 3,
             stats: [
                 {level:  1,       strength:     242, magic:     311, defense:     250, resistance:     261, health:     233, luck:     263},
+                {level:  5,       strength:     287, magic:     423, defense:     300, resistance:     335, health:     274, luck:     332},
+                {level: 10,       strength:     375, magic:     637, defense:     397, resistance:     477, health:     352, luck:     465},
             ]
         }, {
             name: "Winter Wolf++",
