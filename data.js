@@ -210,6 +210,11 @@ honorbounder.data = {
         description: "Attack a chain of enemies.",
         mana: -1 // unknown
     }, {
+        name: "Entropy",
+        code: 'entropy',
+        description: "Attack a single enemy and deal damage over time.",
+        mana: 5 // unknown
+    }, {
         name: "Flamecall",
         code: 'flamecall',
         description: "Attack a single enemy for massive damage.",
@@ -333,6 +338,11 @@ honorbounder.data = {
         name: "Mana Burst",
         code: 'mana-burst',
         description: "Generate a lot of mana in battle. (3-5 mana).",
+        mana: 0 // passive
+    }, {
+        name: "Mana Infusion",
+        code: 'mana-infusion',
+        description: "Increase your mana regeneration by 2.",
         mana: 0 // passive
     }, {
         name: "Mass Heal",
@@ -734,7 +744,7 @@ honorbounder.data = {
         element: 'spirit',
         tier: 'rare',
         class: 'rogue',
-        abilities: ['steal'],
+        abilities: ['steal', 'flashing-blades', 'haste'],
         evolutions: [ {
             name: "Alshin Shadow",
             stars: 1,
@@ -4092,6 +4102,23 @@ honorbounder.data = {
             stars: 2,
             stats: [
                 {level:  1,       strength:     154, magic:     185, defense:     150, resistance:     174, health:     215, luck:     174},
+            ]
+        } ],
+
+    },  {
+
+        name: "The Inquisitor",
+        code: 'the-inquisitor',
+        wiki: 'The_Inquisitor',
+        element: 'primal',
+        tier: 'legendary',
+        class: 'cleric',
+        abilities: ['minor-heal', 'entropy', 'mana-infusion'],
+        evolutions: [ {
+            name: "The Inquisitor",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     732, magic:     786, defense:     712, resistance:     736, health:     732, luck:     744},
             ]
         } ],
 
