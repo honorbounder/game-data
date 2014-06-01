@@ -110,6 +110,11 @@ honorbounder.data = {
         description: "Protect all party members from those of the Abyss affinity.",
         mana: 0 // passive
     }, {
+        name: "Aegis Guard",
+        code: 'aegis-guard',
+        description: "Grant allies a major buff to their magical defense attribute.",
+        mana: 0 // passive
+    }, {
         name: "Aegis Stance",
         code: 'aegis-stance',
         description: "Grant allies a minor buff to their magical defense attribute.",
@@ -155,6 +160,11 @@ honorbounder.data = {
         description: "Stun a chain of enemies.",
         mana: 12
     }, {
+        name: "Burning Chant",
+        code: 'burning-chant',
+        description: "Recite a chant to cause all enemies to burn for damage over time.",
+        mana: 0 // NOT passive
+    }, {
         name: "Channel Mana",
         code: 'channel-mana',
         description: "Generate mana in battle.",
@@ -174,6 +184,11 @@ honorbounder.data = {
         code: 'conflagration',
         description: "Attack all enemies and make them lose health over time.",
         mana: -1 // unknown
+    }, {
+        name: "Crusader's Chant",
+        code: 'crusader-s-chant',
+        description: "Recite a chant to grant all allies a minor buff to their attack attribute along with a minor heal over time.",
+        mana: 0 // NOT passive
     }, {
         name: "Deadly Poison",
         code: 'deadly-poison',
@@ -214,6 +229,16 @@ honorbounder.data = {
         code: 'entropy',
         description: "Attack a single enemy and deal damage over time.",
         mana: 5 // unknown
+    }, {
+        name: "Eruption",
+        code: 'eruption',
+        description: "Attack a single enemy with a powerful eruption.",
+        mana: 7
+    }, {
+        name: "Fiery Cleave",
+        code: 'fiery-cleave',
+        description: "Attack a chain of enemteries and cause them to burn for damage over time.",
+        mana: 7
     }, {
         name: "Flamecall",
         code: 'flamecall',
@@ -355,6 +380,16 @@ honorbounder.data = {
         description: "Make all party members regenrate health over time.",
         mana: 6
     }, {
+        name: "Maul",
+        code: 'maul',
+        description: "Stun an enemy for one round.",
+        mana: 8
+    }, {
+        name: "Mindflay Poison",
+        code: 'mindflay-poison',
+        description: "Attacks a single enemy and debuff their magical attack.",
+        mana: -1 // unknown
+    }, {
         name: "Minor Heal",
         code: 'minor-heal',
         description: "Heal a single target for moderate HP.",
@@ -394,6 +429,11 @@ honorbounder.data = {
         code: 'poison-bolt',
         description: "Attack a chain of enemies with a poisonous hex.",
         mana: -1 // unknown
+    }, {
+        name: "Poison Strike",
+        code: 'poison-strike',
+        description: "Imbue your basic attacks with poison.",
+        mana: 2
     }, {
         name: "Predator's Eye",
         code: 'predator-s-eye',
@@ -440,6 +480,11 @@ honorbounder.data = {
         code: 'rend-and-tear',
         description: "Attack a chain of enemies.",
         mana: 4
+    }, {
+        name: "Rending Whirlwind",
+        code: 'rending-whirlwind',
+        description: "Attack a group of enemies and debuff their physical defense.",
+        mana: 7
     }, {
         name: "Reap",
         code: 'reap',
@@ -546,6 +591,11 @@ honorbounder.data = {
         description: "Protect all party members from those of Terra affinity.",
         mana: 0 // passive
     }, {
+        name: "Terra's Curse Chant",
+        code: 'terra-s-curse-chant',
+        description: "Recite a chant to cause a single enemy to be weak against Terra attacks.",
+        mana: 0 // NOT passive
+    }, {
         name: "Thorn Coat",
         code: 'thorn-coat',
         description: "Target reflects a small amount of physical damage.",
@@ -612,6 +662,23 @@ honorbounder.data = {
                 {level:  1,       strength:     267, magic:     255, defense:     210, resistance:     230, health:     292, luck:     223},
                 {level:  5,       strength:     365, magic:     341, defense:     252, resistance:     293, health:     330, luck:     278},
                 {level: 10,       strength:     552, magic:     506, defense:     332, resistance:     415, health:     405, luck:     385},
+            ]
+        } ]
+
+    },  {
+
+        name: "Abattoir",
+        code: 'abattoir',
+        wiki: 'Abattoir',
+        element: 'abyss',
+        tier: 'legendary',
+        class: 'knight',
+        abilities: ['defend', 'poison-strike', 'rending-whirlwind'],
+        evolutions: [ {
+            name: "Abattoir",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     768, magic:     732, defense:     736, resistance:     700, health:     786, luck:     727},
             ]
         } ]
 
@@ -1090,6 +1157,29 @@ honorbounder.data = {
 
     },  {
 
+        name: "Captain Blackmast",
+        code: 'captain-blackmast',
+        wiki: 'Captain_Blackmast',
+        element: 'spirit',
+        tier: 'epic',
+        class: 'knight',
+        abilities: ['defend', 'impale', 'aegis-guard'],
+        evolutions: [ {
+            name: "Captain Blackmast",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     321, magic:     295, defense:     298, resistance:     272, health:     334, luck:     291},
+            ]
+        }, {
+            name: "Captain Blackmast+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     394, magic:     364, defense:     367, resistance:     338, health:     409, luck:     360},
+            ]
+        } ]
+
+    },  {
+
         name: "Chosen Assassin",
         code: 'chosen-assassin',
         wiki: 'Chosen_Assassin',
@@ -1108,6 +1198,41 @@ honorbounder.data = {
             stars: 2,
             stats: [
                 {level:  1,       strength:     396, magic:     350, defense:     365, resistance:     341, health:     343, luck:     423},
+            ]
+        } ]
+
+    },  {
+
+        name: "Centaur Dragoon",
+        code: 'centaur-dragoon',
+        wiki: 'Centaur_Dragoon',
+        element: 'terra',
+        tier: 'epic',
+        class: 'warrior',
+        abilities: ['cleave', 'burning-chant', 'fiery-cleave'],
+        evolutions: [ {
+            name: "Centaur Dragoon",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     329, magic:     263, defense:     272, resistance:     295, health:     306, luck:     334},
+            ]
+        }, {
+            name: "Centaur Dragoon+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     402, magic:     327, defense:     338, resistance:     364, health:     376, luck:     409},
+            ]
+        }, {
+            name: "Centaur Dragoon++",
+            stars: 3,
+            stats: [
+                {level:  1,       strength:     450, magic:     370, defense:     382, resistance:     409, health:     422, luck:     457},
+            ]
+        }, {
+            name: "Centaur Dragoon+++",
+            stars: 4,
+            stats: [
+                {level:  1,       strength:     498, magic:     414, defense:     427, resistance:     456, health:     468, luck:     505},
             ]
         } ]
 
@@ -1172,6 +1297,23 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     379, magic:     450, defense:     379, resistance:     422, health:     379, luck:     423},
+            ]
+        } ]
+
+    },  {
+
+        name: "Denric the Dashing",
+        code: 'Denric-the-dashing',
+        wiki: 'Denric_the_Dashing',
+        element: 'terra',
+        tier: 'epic',
+        class: 'rogue',
+        abilities: ['steal', 'deadly-poison', 'garrote'],
+        evolutions: [ {
+            name: "Denric the Dashing",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     334, magic:     295, defense:     281, resistance:     263, health:     308, luck:     341},
             ]
         } ]
 
@@ -1984,6 +2126,52 @@ honorbounder.data = {
 
     },  {
 
+        name: "Heiress of Frost",
+        code: 'heiress-of-Frost',
+        wiki: 'Heiress_of_Frost',
+        element: 'lunar',
+        tier: 'epic',
+        class: 'wizard',
+        abilities: ['arcane-blast', 'ice-storm', 'symbol-of-focus'],
+        evolutions: [ {
+            name: "Heiress of Frost",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     295, magic:     347, defense:     263, resistance:     298, health:     295, luck:     316},
+            ]
+        }, {
+            name: "Heiress of Frost+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     364, magic:     423, defense:     327, resistance:     367, health:     364, luck:     388},
+            ]
+        } ]
+
+    },  {
+
+        name: "Herridan the Swift",
+        code: 'herridan-the-swift',
+        wiki: 'Herridan_the_Swift',
+        element: 'primal',
+        tier: 'legendary',
+        class: 'knight',
+        abilities: ['defend', 'crusader-s-chant', 'shield-bash'],
+        evolutions: [ {
+            name: "Herridan the Swift",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     747, magic:     688, defense:     736, resistance:     750, health:     763, luck:     732},
+            ]
+        }, {
+            name: "Herridan the Swift++",
+            stars: 3,
+            stats: [
+                {level:  1,       strength:     883, magic:     814, defense:     870, resistance:     884, health:     907, luck:     868},
+            ]
+        } ]
+
+    },  {
+
         name: "High King Gard",
         code: 'high-king-gard',
         wiki: 'High_King_Gard',
@@ -2112,6 +2300,35 @@ honorbounder.data = {
             stars: 2,
             stats: [
                 {level:  1,       strength:     259, magic:     214, defense:     208, resistance:     198, health:     222, luck:     232},
+            ]
+        } ]
+
+    },  {
+
+        name: "Judge Helfyre",
+        code: 'judge-helfyre',
+        wiki: 'Judge_Helfyre',
+        element: 'primal',
+        tier: 'epic',
+        class: 'warrior',
+        abilities: ['cleave'],
+        evolutions: [ {
+            name: "Judge Helfyre",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     347, magic:     295, defense:     272, resistance:     263, health:     321, luck:     328},
+            ]
+        }, {
+            name: "Judge Helfyre+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     423, magic:     364, defense:     338, resistance:     327, health:     394, luck:     401},
+            ]
+        }, {
+            name: "Judge Helfyre+++",
+            stars: 4,
+            stats: [
+                {level:  1,       strength:     480, magic:     421, defense:     395, resistance:     383, health:     450, luck:     458},
             ]
         } ]
 
@@ -2324,23 +2541,6 @@ honorbounder.data = {
 
     },  {
 
-        name: "Liashi Chieftain",
-        code: 'liashi-chieftain',
-        wiki: 'Liashi_Chieftain',
-        element: 'terra',
-        tier: 'epic',
-        class: 'rogue',
-        abilities: ['steal', 'thorn-coat'],
-        evolutions: [ {
-            name: "Liashi Chieftain",
-            stars: 1,
-            stats: [
-                {level:  1,       strength:     312, magic:     275, defense:     281, resistance:     299, health:     313, luck:     292},
-            ]
-        } ]
-
-    },  {
-
         name: "Liashi Golem",
         code: 'liashi-golem',
         wiki: 'Liashi_Golem',
@@ -2361,12 +2561,29 @@ honorbounder.data = {
         name: "Liashi Lookout",
         code: 'liashi-lookout',
         wiki: 'Liashi_Lookout',
-        element: 'terra',
+        element: 'spirit',
         tier: 'rare',
         class: 'rogue',
         abilities: ['steal', 'gambler-s-trick', 'blinding-powder'],
         evolutions: [ {
             name: "Liashi Lookout",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     312, magic:     275, defense:     281, resistance:     299, health:     313, luck:     292},
+            ]
+        } ]
+
+    },  {
+
+        name: "Liashi Ogre Chieftain",
+        code: 'liashi-ogre-chieftain',
+        wiki: 'Liashi_Ogre_Chieftain',
+        element: 'primal',
+        tier: 'epic',
+        class: 'rogue',
+        abilities: ['steal', 'thorn-coat', 'mindflay-poison'],
+        evolutions: [ {
+            name: "Liashi Ogre Chieftain",
             stars: 1,
             stats: [
                 {level:  1,       strength:     312, magic:     275, defense:     281, resistance:     299, health:     313, luck:     292},
@@ -2530,6 +2747,41 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     267, magic:     347, defense:     263, resistance:     347, health:     387, luck:     281},
+            ]
+        } ]
+
+    },  {
+
+        name: "Lyna the Doombringer",
+        code: 'lyna-the-doombringer',
+        wiki: 'Lyna_the_Doombringer',
+        element: 'terra',
+        tier: 'legendary',
+        class: 'warrior',
+        abilities: ['cleave', 'rend-armor', 'flowing-cut'],
+        evolutions: [ {
+            name: "Lyna the Doombringer",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     804, magic:     732, defense:     700, resistance:     688, health:     768, luck:     778},
+            ]
+        }, {
+            name: "Lyna the Doombringer+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     949, magic:     867, defense:     830, resistance:     815, health:       0, luck:     919},
+            ]
+        }, {
+            name: "Lyna the Doombringer++",
+            stars: 3,
+            stats: [
+                {level:  1,       strength:    1031, magic:     945, defense:     906, resistance:     890, health:       0, luck:    1000},
+            ]
+        }, {
+            name: "Lyna the Doombringer+++",
+            stars: 4,
+            stats: [
+                {level:  1,       strength:    1112, magic:    1021, defense:     979, resistance:     963, health:       0, luck:    1079},
             ]
         } ]
 
@@ -2827,6 +3079,40 @@ honorbounder.data = {
 
     },  {
 
+        name: "Oromei the Wise",
+        code: 'oromei-the-wise',
+        wiki: 'Oromei_the_Wise',
+        element: 'terra',
+        tier: 'legendary',
+        class: 'wizard',
+        abilities: ['arcane-blast', 'eruption', 'terra-s-curse-chant'],
+        evolutions: [ {
+            name: "Oromei the Wise",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     716, magic:     736, defense:     688, resistance:     804, health:     716, luck:     768},
+            ]
+        } ]
+
+    },  {
+
+        name: "Owlbear",
+        code: 'owlbear',
+        wiki: 'Owlbear',
+        element: 'primal',
+        tier: 'rare',
+        class: 'warrior',
+        abilities: ['cleave', 'furious-cry', 'primal-blow'],
+        evolutions: [ {
+            name: "Owlbear",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     212, magic:     173, defense:     183, resistance:     158, health:     211, luck:     202},
+            ]
+        } ]
+
+    },  {
+
         name: "Pallbearer",
         code: 'pallbearer',
         wiki: 'Pallbearer',
@@ -2908,6 +3194,46 @@ honorbounder.data = {
             stars: 1,
             stats: [
                 {level:  1,       strength:     359, magic:     279, defense:     272, resistance:     263, health:     331, luck:     289},
+            ]
+        } ]
+
+    },  {
+
+        name: "Rampaging Hunter",
+        code: 'rampaging-hunter',
+        wiki: 'Rampaging_Hunter',
+        element: 'lunar',
+        tier: 'epic',
+        class: 'rogue',
+        abilities: ['steale', 'garrote', 'deadly-poison'],
+        evolutions: [ {
+            name: "Rampaging Hunter",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     345, magic:     279, defense:     281, resistance:     263, health:     317, luck:     298},
+            ]
+        } ]
+
+    },  {
+
+        name: "Rampaging Screetch ",
+        code: 'rampaging-screetch ',
+        wiki: 'Rampaging_Screetch ',
+        element: 'abyss',
+        tier: 'epic',
+        class: 'warrior',
+        abilities: ['rend-and-tear', 'retribution', 'frightful-visage'],
+        evolutions: [ {
+            name: "Rampaging Screetch",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     359, magic:     279, defense:     272, resistance:     263, health:     331, luck:     289},
+            ]
+        }, {
+            name: "Rampaging Screetch+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     437, magic:     345, defense:     338, resistance:     327, health:     406, luck:     356},
             ]
         } ]
 
@@ -4124,6 +4450,23 @@ honorbounder.data = {
 
     },  {
 
+        name: "The Withered",
+        code: 'the-withered',
+        wiki: 'The_Withered',
+        element: 'abyss',
+        tier: 'legendary',
+        class: 'knight',
+        abilities: ['defend', 'stalwart-stance', 'lance'],
+        evolutions: [ {
+            name: "The Withered",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     782, magic:     710, defense:     736, resistance:     700, health:     802, luck:     688},
+            ]
+        } ],
+
+    },  {
+
         name: "Tothnyla the Harpooner",
         code: 'tothnyla-the-harpooner',
         wiki: 'Tothnyla_the_Harpooner',
@@ -4242,6 +4585,29 @@ honorbounder.data = {
             stars: 2,
             stats: [
                 {level:  1,       strength:     307, magic:     291, defense:     301, resistance:     283, health:     285, luck:     312},
+            ]
+        } ],
+
+    },  {
+
+        name: "Undead Bear",
+        code: 'undead-bear',
+        wiki: 'Undead_Bear',
+        element: 'abyss',
+        tier: 'rare',
+        class: 'knight',
+        abilities: ['defend', 'aegis-stance', 'maul'],
+        evolutions: [ {
+            name: "Undead Bear",
+            stars: 1,
+            stats: [
+                {level:  1,       strength:     183, magic:     173, defense:     218, resistance:     191, health:     213, luck:     162},
+            ]
+        }, {
+            name: "Undead Bear+",
+            stars: 2,
+            stats: [
+                {level:  1,       strength:     217, magic:     207, defense:     254, resistance:     226, health:     249, luck:     195},
             ]
         } ],
 
